@@ -45,6 +45,12 @@ describe SearchUp do
     expect(f).to eq([])
   end
 
+  it "returns nil with no files if find_one: true" do
+    f = SearchUp.search(test_content_path("foo/bar"), "bang.txt", stop_at: test_content_path("foo"), find_one: true)
+
+    expect(f).to eq(nil)
+  end
+
   it "filters by predicate" do
     f = SearchUp.search(test_content_path("foo/bar"), "*.txt", stop_at: test_content_path(".")) { |f| File.file?(f) }
 

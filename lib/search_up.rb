@@ -39,6 +39,7 @@ module SearchUp
       break if current == stop_directory
     end
 
-    ret.flatten
+    # implicit; we can't get here in the find_one path unless we haven't found one
+    find_one ? nil : ret.flatten
   end
 end
