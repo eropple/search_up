@@ -1,6 +1,6 @@
 # SearchUp
 
-`SearchUp` encapsulates an annoyingly common bit of code I keep writing for various projects (like [Boss](https://github.com/eropple/cfer-boss)) -- recursively searching upward for a file or directory. We see this all the time in Ruby command-line tools, searching for a `Gemfile` or a `Rakefile`, and everybody implements it themselves. Nobody implements it the same way twice, either. So I decided to take my preferred implementation and gem it up.
+`SearchUp` encapsulates an annoyingly common bit of code I keep writing for various projects (like [Auster](https://github.com/eropple/auster)) -- recursively searching upward for a file or directory. We see this all the time in Ruby command-line tools, searching for a `Gemfile` or a `Rakefile`, and everybody implements it themselves. Nobody implements it the same way twice, either. So I decided to take my preferred implementation and gem it up.
 
 ## Installation
 
